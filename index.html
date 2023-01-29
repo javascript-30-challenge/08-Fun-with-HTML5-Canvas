@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Canvas</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" defer src="./script.js"></script>
+</head>
+<body>
+
+<div id="painter">
+  
+  <div id="canvas">
+    <canvas id="draw"></canvas>
+  </div>
+
+  <div id="tools">
+    <label for="color">Color: </label>
+    <input type="color" name="color" id="color">
+
+    <label for="stroke">Stroke: </label>
+    <input type="range" name="stroke" id="stroke" min="2" max="30" value="2">
+
+    <button id="reset" type="reset">reset</button>
+
+    <label for="backroundColor">BG Color: </label>
+    <input type="color" name="color" id="bg-color" onchange="pickBackground()">
+    
+  </div>
+
+</div>
+
+</body>
+</html>
